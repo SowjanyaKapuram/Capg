@@ -17,6 +17,7 @@ public class Encryption {
 	}
 
 	private static void decrypt(StringBuilder sb, int n) {
+		
 		for(int i=0;i<s.length();i++){
 			sb.append((char)(byte)(s.charAt(i)-n));
 		}
