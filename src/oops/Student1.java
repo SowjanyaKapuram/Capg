@@ -1,16 +1,10 @@
 package oops;
-
-public class Student1 {
+import java.io.Serializable;
+public class Student1 implements Serializable {
 	private String name;
 	private int roll;
 	private double fees;
-	private String collegename;
-	public String getCollegename() {
-		return collegename;
-	}
-	public void setCollegename(String collegename) {
-		this.collegename = collegename;
-	}
+	 
 	public String getName() {
 		return name;
 	}
