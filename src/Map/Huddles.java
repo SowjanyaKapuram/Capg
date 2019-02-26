@@ -13,14 +13,14 @@ public class Huddles {
 			a[i]=sc.nextInt();
 			
 		}
-		 
+		 int m= a[0];
 		for (int i = 0; i < a.length-1; i++) {
 			
-			if(a[i]>a[i+1]) 
+			if(m<a[i]) 
 				 m = a[i];
-		
-		System.out.println(m-k);
 		}
+		System.out.println(m-k);
+		
 	}
 	
 

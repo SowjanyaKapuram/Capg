@@ -1,5 +1,6 @@
 package Map;
 
+import java.util.HashSet;
 import java.util.Scanner;
 import java.util.TreeSet;
 
@@ -10,22 +11,16 @@ public class Panagram {
 Scanner sc =new Scanner(System.in);
 		
 		String s1= sc.next();
-		char[] ch1 = s1.toCharArray();
-		String s2= "abcdefghijklmnopqrstuvwxyz";
-		char[] ch2 = s2.toCharArray();
-		int count=0;
-		//TreeSet<String>  treeSet = new TreeSet<>();
-		 for (int i = 0; i < ch1.length; i++) {
-				for (int j = 0; j < ch2.length; j++) {
-					
-					count++;
-				}
-				
-				 
-			}
+		 HashSet<Character> al = new HashSet<Character>();
+		 //int count=0;
+		 for (int i = 0; i < s1.length()-1; i++) {
+			al.add(s1.charAt(i));
+			 
+		}
 		
-		if(count>26) 
-	
+		int count= al.size();
+		
+		if(count==27) 
 		 System.out.println("Panagram");
 		else
 			System.out.println(" Not panagram");
